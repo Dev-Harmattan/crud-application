@@ -6,7 +6,7 @@ const userRoutes = require('./routes/userRoutes');
 const app = express();
 
 const dbUrl = `${process.env.DB_URL}`
-mongoose.connect(dbUrl, {useNewUrlParser: true, useUnifiedTopology: true}, (err) => {
+mongoose.connect(dbUrl, {useNewUrlParser: true, useUnifiedTopology: true, useCreateIndex: true}, (err) => {
   if(err){
     console.error(err)
   }else{
@@ -15,7 +15,8 @@ mongoose.connect(dbUrl, {useNewUrlParser: true, useUnifiedTopology: true}, (err)
   }
 });
 
-
+app.use(express.json());
+app.use(express.urlencoded({extended: true}));
 app.use('/user', userRoutes);
 
 
