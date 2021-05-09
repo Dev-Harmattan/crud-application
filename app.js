@@ -17,6 +17,10 @@ mongoose.connect(dbUrl, {useNewUrlParser: true, useUnifiedTopology: true, useCre
 
 app.use(express.json());
 app.use(express.urlencoded({extended: true}));
+
+app.get('/', (req, res) => {
+  res.status(200).json({message: 'Welcome \n Now proceed to create User'});
+});
 app.use('/user', userRoutes);
 
 
