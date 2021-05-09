@@ -10,8 +10,7 @@ mongoose.connect(dbUrl, {useNewUrlParser: true, useUnifiedTopology: true, useCre
   if(err){
     console.error(err)
   }else{
-    const PORT = 3000;
-    app.listen(PORT, () => {console.log(`App running at port: ${PORT}`)});
+    console.log('Database connected');
   }
 });
 
@@ -22,6 +21,13 @@ app.get('/', (req, res) => {
   res.status(200).json({message: 'Welcome \n Now proceed to create User'});
 });
 app.use('/user', userRoutes);
+
+
+
+const PORT = 3000;
+app.listen(PORT, () => {
+  console.log(`App running at port: ${PORT}`)
+});
 
 
 
