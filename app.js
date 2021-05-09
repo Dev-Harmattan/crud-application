@@ -25,7 +25,7 @@ app.use('/user', userRoutes);
 
 
 
-app.listen(3000, () => {
+app.listen(process.env.PORT || 5000, () => {
   console.log(`App running at port: 3000`)
 });
 
