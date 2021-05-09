@@ -24,9 +24,9 @@ app.use('/user', userRoutes);
 
 
 
-const PORT = 3000;
-app.listen(PORT, () => {
-  console.log(`App running at port: ${PORT}`)
+
+app.listen(3000, () => {
+  console.log(`App running at port: 3000`)
 });
 
 
