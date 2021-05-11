@@ -5,11 +5,14 @@ The CRUD application is the application that demonstrate how to Create, Read, Up
 
 ### 'npm start'
 Clone this project to prefer directory.
+
 Run npm install.
+
 Run npm start.
 
 ### 'Home Page Url'
 https://my-crude-app.herokuapp.com/
+
 This url will return a welcome message, you can now proceed to create your first user.
 
 ### 'To Create a User'
