@@ -16,6 +16,7 @@ This url will return a welcome message, you can now proceed to create your first
 This require 3 fields which are 'name', 'email' and 'country' in either json or form-data.
 
 Route path: /user/create
+
 Request URL: https://my-crude-app.herokuapp.com/user/create
 
 
@@ -23,6 +24,7 @@ Request URL: https://my-crude-app.herokuapp.com/user/create
 This will require particular user id parameter.
 
 Route path: /user/:id
+
 Request URL: https://my-crude-app.herokuapp.com/user/
 
 
@@ -30,12 +32,14 @@ Request URL: https://my-crude-app.herokuapp.com/user/
 This will require particular user id parameter and fields to update in either Json or form-data.
 
 Route path: /user/update/:id
+
 Request URL: https://my-crude-app.herokuapp.com/user/update/id
 
 ### 'To Delete a User data'
 This will require particular user id parameter.
 
 Route path: /user/delete/:id
+
 Request URL: https://my-crude-app.herokuapp.com/user/delete/id
 
 
