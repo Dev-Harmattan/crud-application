@@ -28,7 +28,7 @@ This will require particular user id parameter.
 
 Route path: /user/:id
 
-Request URL: https://my-crude-app.herokuapp.com/user/
+Request URL: https://my-crude-app.herokuapp.com/user/id
 
 
 ### 'To Update a User data'
